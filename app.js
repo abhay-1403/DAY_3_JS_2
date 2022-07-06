@@ -22,10 +22,21 @@ function play()
   if(p1 >= target)
     {
       document.getElementById("out").innerHTML = "Player 1 won the match";
+      document.getElementById('btn').innerText = 'Play Again'
+            if(document.getElementById('btn').innerText==='Play Again'){
+                document.getElementById('btn').onclick=function(){
+                    location.reload()
+                }
+            }
     }
   else if(p2 >= target)
     {
       document.getElementById("out").innerHTML = "Player 2 won the match";
-  
+      document.getElementById('btn').innerText = 'Play Again'
+      if(document.getElementById('btn').innerText==='Play Again'){
+          document.getElementById('btn').onclick=function(){
+              location.reload()
+          }
+      }
     }
 }
